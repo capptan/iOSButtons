@@ -1,0 +1,6 @@
+framework module iOSButtons {
+  umbrella header "iOSButtons-umbrella.h"
+
+  export *
+  module * { export * }
+}

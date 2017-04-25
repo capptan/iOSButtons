@@ -1,0 +1,16 @@
+PODS:
+  - iOSButtons (0.1.0)
+
+DEPENDENCIES:
+  - iOSButtons (from `../`)
+
+EXTERNAL SOURCES:
+  iOSButtons:
+    :path: ../
+
+SPEC CHECKSUMS:
+  iOSButtons: 134e35258150c2be4789cfb778a7f8428987dc32
+
+PODFILE CHECKSUM: b238081a2f2bc6114ea06a52b099d2bd3de34eaf
+
+COCOAPODS: 1.2.1

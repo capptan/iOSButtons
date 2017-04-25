@@ -1,0 +1,22 @@
+{
+  "name": "iOSButtons",
+  "version": "0.1.0",
+  "summary": "A short description of iOSButtons.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Joel Sene/iOSButtons",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Joel Sene": "joel.sene@capptan.com.br"
+  },
+  "source": {
+    "git": "https://github.com/Joel Sene/iOSButtons.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "iOSButtons/Classes/**/*"
+}

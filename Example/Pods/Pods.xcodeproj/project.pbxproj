@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		11E5B17104D85BD7BDF927AB595E346A /* iOSButtons-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0E714FC6CA068155FD6B46578FE821 /* iOSButtons-dummy.m */; };
-		14F13B75FA8BBE32EBEB7BC168BE12C0 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5987570B8715DF7F9EDA27A856282926 /* ReplaceMe.swift */; };
 		2F36A63D1D28290C17E2535132C6EEE0 /* Pods-iOSButtons_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 646C7D6660C0B3A95808D2D22B88FDEE /* Pods-iOSButtons_Example-dummy.m */; };
 		44D5E0BE300B0DA73E79701E364E0AEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		7A78F3744E6988DA9AA13C0E5875C945 /* Pods-iOSButtons_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E68AC3AF6591BF13AD3694DCF13E3A /* Pods-iOSButtons_Tests-dummy.m */; };
 		8E2E3B5614F40D7E66581643CEF1825F /* Pods-iOSButtons_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E79C1F32DDF5473543CEB94C9E75E60E /* Pods-iOSButtons_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB95CB5C91430F9F383F35D9AC3F3339 /* Pods-iOSButtons_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5C7C3869A80F19721FE78E314F4F6D0 /* Pods-iOSButtons_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C28F62ED84B4FDFA412AAF3221791107 /* iOSButtons-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA2ABAA71ED09775FC77D111FDA9216F /* iOSButtons-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF4D81241EAFDD6D00EBDDF7 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4D81231EAFDD6D00EBDDF7 /* Button.swift */; };
+		CF4D812F1EAFE7D800EBDDF7 /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4D812E1EAFE7D800EBDDF7 /* CornerRadius.swift */; };
 		FD5A9BC5A255020C420CCCC071F1E146 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		FDFC81EC439927D71EB7191152A0C2C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -30,31 +31,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02F61BCF7E696DE78AD0F02649F4E9FC /* iOSButtons.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = iOSButtons.modulemap; sourceTree = "<group>"; };
+		02F61BCF7E696DE78AD0F02649F4E9FC /* iOSButtons.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = iOSButtons.modulemap; sourceTree = "<group>"; };
 		058F43CB19460F85F70718A369F9E0F5 /* Pods-iOSButtons_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSButtons_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		138C87669471833CE88ABA82B24E9A88 /* iOSButtons.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iOSButtons.xcconfig; sourceTree = "<group>"; };
 		186692E65AD00F603875915438720954 /* Pods-iOSButtons_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iOSButtons_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		19C3F3BD679B8EF4895DCA0D13379212 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D0E714FC6CA068155FD6B46578FE821 /* iOSButtons-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iOSButtons-dummy.m"; sourceTree = "<group>"; };
 		23E68AC3AF6591BF13AD3694DCF13E3A /* Pods-iOSButtons_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iOSButtons_Tests-dummy.m"; sourceTree = "<group>"; };
-		312785F99921DA5FFA9D19AFC252B1D1 /* iOSButtons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = iOSButtons.framework; path = iOSButtons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		312785F99921DA5FFA9D19AFC252B1D1 /* iOSButtons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iOSButtons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E294F558DED4E3AA5715B2CB77A6F7A /* Pods-iOSButtons_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOSButtons_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		4D49FBD09355189F39B1AD109EC7D33F /* Pods-iOSButtons_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-iOSButtons_Tests.modulemap"; sourceTree = "<group>"; };
-		4FC8AED9D99A83A259D9BBCDD11CD260 /* Pods-iOSButtons_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-iOSButtons_Example.modulemap"; sourceTree = "<group>"; };
-		5987570B8715DF7F9EDA27A856282926 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
+		4D49FBD09355189F39B1AD109EC7D33F /* Pods-iOSButtons_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-iOSButtons_Tests.modulemap"; sourceTree = "<group>"; };
+		4FC8AED9D99A83A259D9BBCDD11CD260 /* Pods-iOSButtons_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-iOSButtons_Example.modulemap"; sourceTree = "<group>"; };
 		5E718AB71E2519A947A87AFCAEE0B86C /* Pods-iOSButtons_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOSButtons_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		646C7D6660C0B3A95808D2D22B88FDEE /* Pods-iOSButtons_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iOSButtons_Example-dummy.m"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7015DE13F26DBF765EDE2507BD4C88F4 /* Pods-iOSButtons_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOSButtons_Example-frameworks.sh"; sourceTree = "<group>"; };
 		72E330B77D3B024E7C9DE5610CDF6556 /* Pods-iOSButtons_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSButtons_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		79FA45B499ECF06EF793FFD715D7ED96 /* Pods_iOSButtons_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iOSButtons_Tests.framework; path = "Pods-iOSButtons_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79FA45B499ECF06EF793FFD715D7ED96 /* Pods_iOSButtons_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSButtons_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E0D45BC77B6893F5B02E9B69A0C9FC0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		817E22C39E9DF47DCA1DEC0080A13939 /* Pods_iOSButtons_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iOSButtons_Example.framework; path = "Pods-iOSButtons_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		817E22C39E9DF47DCA1DEC0080A13939 /* Pods_iOSButtons_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSButtons_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		844D6F913BB7F7DCB4E05C9103A1A74C /* Pods-iOSButtons_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSButtons_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DFE4F2763C80A23EB4126AA4FB05BF9 /* Pods-iOSButtons_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOSButtons_Tests-resources.sh"; sourceTree = "<group>"; };
 		A362CDE1EAB4C6A0E56E293D22306B1D /* iOSButtons-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iOSButtons-prefix.pch"; sourceTree = "<group>"; };
 		BE6D7156BECBC805B87E341AEB904B02 /* Pods-iOSButtons_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOSButtons_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CF4D81231EAFDD6D00EBDDF7 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		CF4D812E1EAFE7D800EBDDF7 /* CornerRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
 		D5C7C3869A80F19721FE78E314F4F6D0 /* Pods-iOSButtons_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iOSButtons_Tests-umbrella.h"; sourceTree = "<group>"; };
 		E762BD7D57E9F1ABA41BB10E187A9A48 /* Pods-iOSButtons_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iOSButtons_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E79C1F32DDF5473543CEB94C9E75E60E /* Pods-iOSButtons_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iOSButtons_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -123,9 +125,9 @@
 		604805BA4D29E9A3D32D04E1BCD0565F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				5987570B8715DF7F9EDA27A856282926 /* ReplaceMe.swift */,
+				CF4D81231EAFDD6D00EBDDF7 /* Button.swift */,
+				CF4D812E1EAFE7D800EBDDF7 /* CornerRadius.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -153,7 +155,6 @@
 			children = (
 				604805BA4D29E9A3D32D04E1BCD0565F /* Classes */,
 			);
-			name = iOSButtons;
 			path = iOSButtons;
 			sourceTree = "<group>";
 		};
@@ -314,6 +315,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					F9E8E88B9D9C2FAFF97E8DE6271ADCF9 = {
+						LastSwiftMigration = 0830;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -348,7 +354,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				11E5B17104D85BD7BDF927AB595E346A /* iOSButtons-dummy.m in Sources */,
-				14F13B75FA8BBE32EBEB7BC168BE12C0 /* ReplaceMe.swift in Sources */,
+				CF4D81241EAFDD6D00EBDDF7 /* Button.swift in Sources */,
+				CF4D812F1EAFE7D800EBDDF7 /* CornerRadius.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,6 +624,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 138C87669471833CE88ABA82B24E9A88 /* iOSButtons.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -651,6 +659,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 138C87669471833CE88ABA82B24E9A88 /* iOSButtons.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

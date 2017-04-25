@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'iOSButtons_Example' do
+  pod 'iOSButtons', :path => '../'
+
+  target 'iOSButtons_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

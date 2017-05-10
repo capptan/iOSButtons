@@ -7,18 +7,36 @@
 //
 
 import UIKit
+import iOSButtons
 
 class ViewController: UIViewController {
+
+	@IBOutlet weak var buttonOne: RaisedButton!
+	@IBOutlet weak var buttonTwo: RaisedButton!
+	@IBOutlet weak var buttonTree: RaisedButton!
+	@IBOutlet weak var stackTags: UIStackView!
+	@IBOutlet weak var stackLabels: UIStackView!
+	@IBOutlet weak var choiceOne: RaisedButton!
+	@IBOutlet weak var choiceTwo: RaisedButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+	@IBAction func buttonOneTapped(_ sender: Any) {
+		buttonOne.flash()
+		choiceOne.flash()
+	}
+
+	@IBAction func twoTapped(_ sender: Any) {
+		buttonTwo.pressed()
+		choiceTwo.jitter()
+	}
+	@IBAction func treeTapped(_ sender: Any) {
+		buttonTree.jitter()
+		choiceOne.pressed()
+	}
 
 }
 

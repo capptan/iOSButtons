@@ -1,9 +1,9 @@
 {
   "name": "iOSButtons",
   "version": "0.1.0",
-  "summary": "A short description of iOSButtons.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Joel Sene/iOSButtons",
+  "summary": "Desing flat, round and borded buttons",
+  "description": "Facilitate the use of differente types of designed buttons for iOS, eliminatiung the need of duplicating code...",
+  "homepage": "https://github.com/capptan/iOSButtons",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,7 @@
     "Joel Sene": "joel.sene@capptan.com.br"
   },
   "source": {
-    "git": "https://github.com/Joel Sene/iOSButtons.git",
+    "git": "https://github.com/capptan/iOSButtons.git",
     "tag": "0.1.0"
   },
   "platforms": {
